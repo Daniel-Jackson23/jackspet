@@ -1,0 +1,25 @@
+@tailwind base;
+h1 {
+    @apply text-2xl;
+}
+h2 {
+    @apply text-xl;
+}
+h3 {
+    @apply text-lg;
+}
+a {
+    /*@apply;*/
+}
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #5CDB95;
+}
+img{
+}
