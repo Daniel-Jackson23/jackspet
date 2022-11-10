@@ -1,10 +1,13 @@
 <template>
+  <DogData />
 
 </template>
 
 <script>
+import DogData from "../components/DogData.vue";
 export default {
-  name: "SherlockView"
+  name: "SherlockView",
+  components: {DogData}
 }
 </script>
 
