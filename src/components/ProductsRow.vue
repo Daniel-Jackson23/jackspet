@@ -1,8 +1,8 @@
-<template>
-  <div class="container
+<template class="container
           px-5
           py-3
-          mx-auto justify-center flex flex-row sm:max-lg:flex-col">
+          mx-auto flex flex-row sm:max-lg:flex-col">
+  <div class=" justify-center flex sm:max-lg:flex-col items-center">
     <div class="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-dark-blue dark:border-gray-700 m-1">
       <a href="#">
         <img class="p-8 rounded-t-lg" src="../assets/images/Products/pet-treats.jpg" width="400" height="200"/>
@@ -138,9 +138,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="justify-center flex sm:max-lg:flex-col items-center ">
 
   </div>
-
 </template>
 
 <script>
