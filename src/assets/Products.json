@@ -1,0 +1,31 @@
+[
+  {
+    "productImage": "./images/dog-food.jpg",
+    "productName": "Dog Food",
+    "productPrice": "£20.00",
+    "animalType": "Dog"
+  },
+  {
+    "productImage": "./images/dog-harness.jpg",
+    "productName": "Dog Harness",
+    "productPrice": "£15.00",
+    "animalType": "Dog"
+  },
+  {
+   "productImage": "./images/dog-toys.jpg",
+    "productName": "Dog Food",
+    "productPrice": "£20.00",
+    "animalType": "Dog"
+  },
+  {
+    "productImage" : "./images/cat-house",
+    "productName" : "Cat Cave",
+    "productPrice": "£25.00",
+    "animalType" : "Cat"
+
+  },
+  {
+    "productImage" : "./images/cat-toy.jpg",
+    "productName"
+  }
+]
