@@ -26,6 +26,8 @@
   },
   {
     "productImage" : "./images/cat-toy.jpg",
-    "productName"
+    "productName" : "Cat LED Light",
+    "productPrice" : "£10.00",
+    "animalType"  : "Cat"
   }
 ]
