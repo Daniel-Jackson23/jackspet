@@ -1,33 +1,39 @@
 [
   {
-    "Image": "/dog-food.jpg",
+    "image": "./src/assets/images/Products/dog-food.jpg",
     "Name": "Dog Food",
-    "Price": "£20.00",
+    "price": "£20.00",
     "Type": "Dog"
   },
   {
-    "Image": "./Products/dog-harness.jpg",
+    "image": "./src/assets/images/Products/dog-harness.jpg",
     "Name": "Dog Harness",
-    "Price": "£15.00",
+    "price": "£15.00",
     "Type": "Dog"
   },
   {
-   "Image": "./images/dog-toys.jpg",
-    "Name": "Dog Food",
-    "Price": "£20.00",
+   "image": "./src/assets/images/Products/dog-toys.jpg",
+    "Name": "Dog Toys",
+    "price": "£20.00",
     "Type": "Dog"
   },
   {
-    "Image" : "./images/cat-house",
+    "image" : "./src/assets/images/Products/cat-house.jpg",
     "Name" : "Cat Cave",
-    "Price": "£25.00",
+    "price": "£25.00",
     "Type" : "Cat"
 
   },
   {
-    "Image" : "./images/cat-toy.jpg",
+    "image" : "./src/assets/images/Products/cat-toy.jpg",
     "Name" : "Cat LED Light",
-    "Price" : "£10.00",
+    "price" : "£10.00",
     "Type"  : "Cat"
+  },
+  {
+    "image" : "./src/assets/images/Products/cat-treats.jpg",
+    "Name" : "Pet Treats",
+    "price" : "£10.00",
+    "Type"  : "dog"
   }
 ]
