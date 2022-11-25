@@ -2,6 +2,7 @@
 import ProductCard from "../components/productCard.vue";
 import HomeBanner from "../components/HomeBanner.vue";
 import json from "../assets/products.json";
+import ProductTitle from "../components/ProductTitle.vue";
 
 
 export default {
@@ -11,6 +12,7 @@ export default {
     }
   },
   components: {
+    ProductTitle,
     HomeBanner,
     ProductCard
   },
@@ -26,8 +28,11 @@ export default {
   <main>
     <HomeBanner/>
   </main>
-  <div class="grid grid-rows-2 grid-flow-col flex sm:max-lg:flex flex-col">
-  <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
+  <div class="grid grid-rows-2 grid-flow-col flex sm:max-lg:flex flex-col justify-center">
+    <ProductTitle class=" flex justify-center">
+      <h2>View Our Current Products</h2>
+    </ProductTitle>
+    <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
   </div>
 
 

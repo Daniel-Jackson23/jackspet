@@ -20,8 +20,8 @@ import './assets/style.css'
               <p class="flex items-center">Jack Pet Supplies</p></router-link>
             <!--Mobile menu button-->
             <div @click="showMenu = !showMenu" class="flex md:hidden">
-              <button type="button" class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400">
-                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+              <button type="button" class="text-dark-blue hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 text-dark-blue">
                   <path fill-rule="evened"
                         d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
                   </path>
@@ -32,7 +32,7 @@ import './assets/style.css'
           <!-- Mobile menu open: block menus closed and hidden -->
           <ul :class="showMenu ? 'flex' : 'hidden'"
               class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-            <RouterLink class="text-lg hover:underline text-dark-blue md:text-dark-blue" to="/">Home</RouterLink>
+            <RouterLink class="text-lg bold hover:underline text-dark-blue md:text-dark-blue " to="/">Home</RouterLink>
             <RouterLink class="text-lg hover:underline text-dark-blue md:text-dark-blue" to="/sherlock">Sherlock Pet
               Rescue
             </RouterLink>

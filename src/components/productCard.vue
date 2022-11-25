@@ -1,6 +1,10 @@
 <template>
-  <div class="container px-5 py-3 mx-auto">
-    <div class="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">-->
+  <div class="container
+          px-3
+          py-3
+          mx-auto
+          md:flex md:justify-between">
+    <div class="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
       <a href="#">
         <img class="p-8 rounded-t-lg" :src=image alt="product image" width="400" height="200"/>
       </a>
@@ -39,9 +43,11 @@
         </div>
         <div class="flex items-center justify-between">
           <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }}</span>
-          <a href="#"
-             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
-            to cart</a>
+          <router-link to="/login">
+            <a href="#"
+               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Call
+              To Order</a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -52,6 +58,7 @@
 <script>
 export default {
   name: "productCard",
+  components: {},
   props: {
     image: String,
     Name: String,

@@ -1,12 +1,12 @@
 <template>
-  <p class="intro-text">
-    <slot/>
-  </p>
+  <h2 class="product-title">
+    <slot />
+  </h2>
 </template>
 
 <script>
 export default {
-  name: "TextContainer"
+  name: "ProductTitle"
 }
 </script>
 
