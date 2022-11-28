@@ -27,13 +27,13 @@ export default {
           mx-auto flex flex-row sm:max-lg:flex-col">
   <main>
     <HomeBanner/>
-  </main>
-  <div class="grid grid-rows-2 grid-flow-col flex sm:max-lg:flex flex-col justify-center">
-    <ProductTitle class=" flex justify-center">
-      <h2>View Our Current Products</h2>
+    <ProductTitle>
+      <h2 class="text-center">Current Products</h2>
     </ProductTitle>
-    <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
-  </div>
+    <div class="grid grid-rows-2 grid-flow-col flex sm:max-lg:flex flex-col justify-center">
+      <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
+    </div>
+  </main>
 
 
 </template>

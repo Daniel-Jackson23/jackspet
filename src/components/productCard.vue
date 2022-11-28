@@ -45,14 +45,13 @@
           <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }}</span>
           <router-link to="/login">
             <a href="#"
-               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Call
+               class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none transition-all focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:border-2 border-light-green ">Call
               To Order</a>
           </router-link>
         </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>

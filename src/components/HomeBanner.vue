@@ -28,8 +28,8 @@
           </router-link>
         </div>
       </div>
-      <div class="">
-        <img src="../assets/images/petshop.png" alt="pet shop" class="petshop rounded">
+      <div class="w-300 h-218">
+        <img src="../assets/images/petshop.png" alt="pet shop" class="bannerImage rounded" width="612" height="408">
       </div>
     </div>
   </section>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-.petshop {
+.bannerImage {
   width: 750px;
   height: auto;
 }
