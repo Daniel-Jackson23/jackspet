@@ -2,19 +2,23 @@
 import ProductCard from "../components/productCard.vue";
 import HomeBanner from "../components/HomeBanner.vue";
 import json from "../assets/products.json";
+import HealthData from "../assets/PetHealth.json";
+import PetHealth from "@/components/PetHealth.vue";
 import ProductTitle from "../components/ProductTitle.vue";
 
 
 export default {
   data() {
     return {
-      products: json
+      products: json,
+      Healthtips: HealthData
     }
   },
   components: {
     ProductTitle,
     HomeBanner,
-    ProductCard
+    ProductCard,
+    PetHealth
   },
 
 }
@@ -34,6 +38,6 @@ export default {
       <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
     </div>
   </main>
-
-
+  <PetHealth v-for="Healthtip in Healthtips" :title="Healthtip.title" :image="Healthtip.image"
+             :description="Healthtip.description" :animal="Healthtip.animal"/>
 </template>
