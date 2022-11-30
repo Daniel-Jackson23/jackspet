@@ -6,24 +6,30 @@
           mx-auto flex flex-row sm:max-lg:flex-col">
       <div class="relative w-50">
         <TextContainer class="pb-5">
-          <h2 class="text-dark-blue text-l">Welcome to Jack Pet Supply</h2>
-          <p>We are currently offering a limited discount of 10% on all Dog food if you subscribe to our website, Don't
-            wait to long!!! </p>
-          <br>
+          <h2 class="text-dark-blue text-l pb-2 font-bold text-primary-text">Welcome to Jack Pet Supply</h2>
+          <p class="">We are currently offering a limited discount of 10% on all Dog food if you subscribe to our
+            website, Don't
+            wait to long!!! </p><br>
           <p>Please look at our current products that we have on offer, we are also partnered with a local dog rescue we
             are donating 10% of orders to Sherlock Rescue.</p>
         </TextContainer>
         <div class="flex">
           <router-link to="/sherlock" custom v-slot="{navigate}">
             <button @click="navigate" role="link" type="button"
-                    class="text-white bg-dark-blue hover:bg-dark-green focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Sherlock Rescue
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Sherlock Rescue
+                </span>
             </button>
           </router-link>
           <router-link to="/login" custom v-slot="{navigate}">
             <button @click="navigate" role="link" type="button"
-                    class="text-white bg-dark-blue hover:bg-dark-green focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Login/Subscribe
+                    class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-black-400 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-primary-100 group-hover:from-cyan-500 group-hover:to-button-primary-100 hover:text-black dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                  <span
+                      class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                      Login Or Sign Up
+                  </span>
             </button>
           </router-link>
         </div>

@@ -14,7 +14,7 @@ import './assets/style.css'
           mx-auto
           md:flex md:justify-between md:items-center sm:border-b-2 border-dark-green md:border-none">
           <div class="flex items-center justify-between ">
-            <router-link to="/" class="text-xl  flex font-bold text-dark-blue md:text-2xl "><img
+            <router-link to="/" class="text-xl  flex font-bold text-primary-text md:text-2xl "><img
                 src="./assets/Logo.svg"
                 alt="logo">
               <p class="flex items-center">Jack Pet Supplies</p></router-link>
@@ -32,11 +32,15 @@ import './assets/style.css'
           <!-- Mobile menu open: block menus closed and hidden -->
           <ul :class="showMenu ? 'flex' : 'hidden'"
               class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-            <RouterLink class="text-lg bold hover:underline text-dark-blue md:text-dark-blue " to="/">Home</RouterLink>
-            <RouterLink class="text-lg hover:underline text-dark-blue md:text-dark-blue" to="/sherlock">Sherlock Pet
+            <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text " to="/">Home
+            </RouterLink>
+            <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/sherlock">
+              Sherlock
+              Pet
               Rescue
             </RouterLink>
-            <RouterLink class="text-lg hover:underline text-dark-blue md:text-dark-blue" to="/login">Login/Sign Up
+            <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/login">
+              Login/Sign Up
             </RouterLink>
           </ul>
         </nav>

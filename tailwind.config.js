@@ -9,16 +9,24 @@ module.exports = {
             lg: '976px',
             xl: '1440px',
         },
+        fontFamily: {
+            'sans': ['ui-sans-serif', 'system-ui', ],
+            'serif': ['ui-serif', 'Georgia', ],
+            'mono': ['ui-monospace', 'SFMono-Regular', ],
+            'display': ['Oswald', ],
+            'body': ['"Open Sans"', ],
+        },
 
         extend: {
             colors: {
-                'dark-blue': '#05386B',
-                'dark-green': '#379683',
-                'green': '#5CDB95',
-                'light-green': '#8EE4AF',
-                'white-text': '#EDF5E1',
-                'yellow-bg': '#f3ec00',
-                'blue-button': '#0ea5e9'
+                'primary-bg': '#DAD7CD',
+                'primary-text': '#344E41',
+                'primary-green-100': '#A3B18A',
+                'primary-green-200': '#588157',
+                'primary-green-300': '#3A5A40',
+                'button-primary' : '#023E8A',
+                'button-primary-100' : '#0077B6'
+
             },
         },
     },
