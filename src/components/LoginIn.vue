@@ -12,16 +12,16 @@
         <input type="password" v-model="password" id="password" name="password" required
                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500">
       </div>
-      <button @click="register" class="mt-3 px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black">Register</button>
+      <button @click="register"
+              class="mt-3 px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black">
+        Register
+      </button>
     </main>
   </div>
 </template>
 
 <script>
-import {ref} from "vue";
 
-let password = ref("");
-let email = ref("");
 
 export default {
   name: "LoginIn"

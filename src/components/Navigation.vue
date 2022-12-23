@@ -30,7 +30,7 @@
         Pet
         Rescue
       </RouterLink>
-      <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/login">
+      <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/register">
         Login/Sign Up
       </RouterLink>
     </ul>
