@@ -5,17 +5,15 @@
           mx-auto
           md:flex md:justify-between md:items-center sm:border-b-2 border-dark-green md:border-none">
     <div class="flex items-center justify-between ">
-      <router-link to="/" class="text-xl flex font-bold text-primary-text md:text-2xl "><img
-          src="../assets/Logo.svg"
-          alt="logo">
+      <router-link to="/" class="text-xl flex font-bold text-primary-text md:text-2xl "><img src="../assets/Logo.svg"
+                                                                                             alt="logo">
         <p class="flex items-center">Jack Pet Supplies</p></router-link>
       <!--Mobile menu button-->
       <div @click="showMenu = !showMenu" class="flex md:hidden">
         <button type="button" class="text-dark-blue hover:text-gray-400 focus:outline-none focus:text-gray-400">
           <svg viewBox="0 0 24 24" class="w-6 h-6 text-dark-blue">
             <path fill-rule="evened"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
-            </path>
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
           </svg>
         </button>
       </div>
@@ -31,15 +29,20 @@
         Rescue
       </RouterLink>
       <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/register">
-        Login/Sign Up
+        Register
       </RouterLink>
     </ul>
   </nav>
+  <LoginBox/>
 </template>
 
 <script>
+import LoginBox from "@/components/LoginBox.vue";
+import {RouterLink} from "vue-router";
+
 export default {
   name: "Navigation",
+  components: {LoginBox},
   data() {
     return {
       showMenu: false,

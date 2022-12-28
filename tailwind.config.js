@@ -2,7 +2,7 @@
 module.exports = {
     content: ["./index.html",
         "./src/**/*.{vue,js,ts,jsx,tsx}",],
-    darkMode: 'media',
+    darkMode: 'mode',
     theme: {
         screens: {
             sm: '370px',
@@ -26,7 +26,12 @@ module.exports = {
                 'primary-green-200': '#588157',
                 'primary-green-300': '#3A5A40',
                 'button-primary' : '#023E8A',
-                'button-primary-100' : '#0077B6'
+                'button-primary-100' : '#0077B6',
+            //     Dark mode colours
+                'dark-text-white' : '#fff',
+                'dark-primary-bg' : '#374151',
+                'dark-button-primary' : '#1e293b',
+
 
             },
         },
