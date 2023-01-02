@@ -1,32 +1,34 @@
 <template>
   <div id="LoginComponent">
-    <div v v-if="!authenticed" class="bg-white shadow-md rounded p-1 flex flex-row w-1/2">
-      <p class="m-2">
-        <input type="email" v-model="email"
-               class="myEmail bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
-               name="myEmail" required>
-        <label for="myEmail" class="text-gray-700 text-sm font-bold md-2">Email</label>
-      </p>
-      <p class="m-2">
-        <input type="password" v-model="password"
-               class="myPassword bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
-               name="myPassword" required/>
-        <label for="myPassword" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
-      </p>
-      <button @click="logIn"
-              class="mt-2 px-3 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black">
-        Login
+    <div v v-if="!authenticed" class="flex items-center justify-center min-h-screen">
+      <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+        <h3 class="text-center font-bold py-2">Login into your account</h3>
+        <p class="m-2">
+          <input type="email" v-model="email"
+                 class="myEmail bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
+                 name="myEmail" required>
+          <label for="myEmail" class="text-gray-700 text-sm font-bold md-2">Email</label>
+        </p>
+        <p class="m-2">
+          <input type="password" v-model="password"
+                 class="myPassword bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
+                 name="myPassword" required/>
+          <label for="myPassword" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+        </p>
+        <button @click="logIn"
+                class="mt-2 px-3 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-button-primary text-white">
+          Login
+        </button>
+        <p v-if="errMsg">{{ errMsg }}</p>
+      </div>
+    </div>
+    <div v-if="authenticated">
+      <button @click="logOut"
+              class="myLogout mt-3 px-6 h-12 uppercase font-semibold tracking-wide border-2 border-black bg-button-primary text-black">
+        Logout
       </button>
-      <p v-if="errMsg">{{ errMsg }}</p>
     </div>
   </div>
-  <div v-if="authenticated">
-    <button @click="logOut"
-            class="myLogout mt-3 px-6 h-12 uppercase font-semibold tracking-wide border-2 border-black bg-teal-400 text-black">
-      Logout
-    </button>
-  </div>
-
 </template>
 
 <script setup>

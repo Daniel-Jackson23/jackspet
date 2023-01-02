@@ -31,9 +31,9 @@
       <RouterLink class="text-lg font-bold hover:underline text-primary-text md:text-primary-text" to="/register">
         Register
       </RouterLink>
+      <RouterLink class="text-lg font-bold hover:underline text-blue-500" to="/login">Login</RouterLink>
     </ul>
   </nav>
-  <LoginBox/>
 </template>
 
 <script>
