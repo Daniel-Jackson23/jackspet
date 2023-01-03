@@ -1,17 +1,4 @@
 <template>
-  <div id="DogContainer">
-    <div v-if="errored">
-      <p>
-        We are sorry, we are not able to receive this information at the moment please try again later.
-      </p>
-    </div>
-    <div v-else>
-      <div v-if="loading">Loading...</div>
-      <p v-else v-for="dog in myJson" :key="dog.message">
-        <img v-bind:src="dog.message" alt="" class="">
-      </p>
-    </div>
-  </div>
 
 </template>
 
