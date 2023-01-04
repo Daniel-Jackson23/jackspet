@@ -5,7 +5,7 @@ import json from "../assets/products.json";
 import HealthData from "../assets/PetHealth.json";
 import PetHealth from "@/components/PetHealth.vue";
 import ProductTitle from "../components/ProductTitle.vue";
-
+import Subscribe from "@/components/Subscribe.vue";
 
 
 export default {
@@ -16,6 +16,7 @@ export default {
     }
   },
   components: {
+    Subscribe,
     ProductTitle,
     HomeBanner,
     ProductCard,
@@ -43,7 +44,11 @@ export default {
       <PetHealth v-for="Healthtip in Healthtips" :title="Healthtip.title" :image="Healthtip.image"
                  :description="Healthtip.description" :animal="Healthtip.animal"/>
     </div>
+    <!--    subscribe-->
+    <Subscribe/>
+    <div>
 
+    </div>
   </main>
 
 

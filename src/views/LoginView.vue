@@ -1,6 +1,6 @@
 <template>
   <div id="LoginComponent">
-    <div v v-if="!authenticed" class="flex items-center justify-center min-h-screen">
+    <div v v-if="!authenticated" class="flex items-center justify-center min-h-screen">
       <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
         <h3 class="text-center font-bold py-2">Login into your account</h3>
         <p class="m-2">
@@ -29,9 +29,11 @@
       </button>
     </div>
   </div>
+
 </template>
 
 <script setup>
+
 import {ref, onMounted, computed} from "vue";
 import {getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {useRoute} from "vue-router";
@@ -89,7 +91,7 @@ function logOut() {
     loggedIn.value = false;
     email.value = "";
     password.value = "";
-    router.push("/home");
+    router.push("/");
   })
 }
 

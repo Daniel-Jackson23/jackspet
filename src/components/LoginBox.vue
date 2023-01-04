@@ -1,6 +1,6 @@
 <template>
   <div id="LoginComponent">
-    <div v v-if="!authenticed" class="bg-white shadow-md rounded p-1 flex flex-row w-1/2">
+    <div v v-if="!authenticated" class="bg-white shadow-md rounded p-1 flex flex-row w-1/2">
       <p class="m-2">
         <input type="email" v-model="email"
                class="myEmail bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-teal-500"
@@ -45,11 +45,7 @@ let auth = getAuth();
 //authenticating the user
 onMounted(() => {
   onAuthStateChanged(auth, (user) => {
-    if (user) {
-      loggedIn.value = true;
-    } else {
-      loggedIn.value = false;
-    }
+    loggedIn.value = !!user;
   });
 })
 let authenticated = computed(() => {
