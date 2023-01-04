@@ -1,0 +1,39 @@
+[
+  {
+    "image": "./src/assets/images/RescueDogs/RescueDog1.jpg",
+    "name": "Barny",
+    "age": "2",
+    "breed": "Yellow Labrador"
+  },
+  {
+    "image": "./src/assets/images/RescueDogs/RescueDog2.jpg",
+    "name": "Mollie",
+    "age": "4",
+    "breed": "Yellow Labrador"
+  },
+  {
+    "image": "./src/assets/images/RescueDogs/RescueDog3.jpg",
+    "name": "Rocky",
+    "age": "5",
+    "breed": "Mixed Breed"
+  },
+  {
+    "image": "./src/assets/images/RescueDogs/Puppies.jpg",
+    "name": "Not Given",
+    "age": "2 Months",
+    "breed": "Yellow Labrador"
+  },
+  {
+    "image": "./src/assets/images/RescueDogs/RescueDog5.jpg",
+    "name": "Ellie",
+    "age": "8",
+    "breed": "German Shepard"
+  },
+  {
+    "image" : "./src/assets/images/RescueDogs/RescueDog6.jpg",
+    "name" : "Amber",
+    "age" : "6",
+    "breed" : "Mixed Breeds"
+
+  }
+]
