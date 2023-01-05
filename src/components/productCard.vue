@@ -4,7 +4,7 @@
           py-3
           mx-auto
           md:flex md:justify-between">
-    <div class="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
+    <div class="w-full max-w-sm bg-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
       <a href="#">
         <img class="p-8 rounded-t-lg" :src=image alt="product image" width="400" height="200"/>
       </a>
@@ -45,7 +45,7 @@
           <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }}</span>
           <router-link to="/login">
             <a href="#"
-               class="text-white bg-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none transition-all focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:border-2 border-light-green ">Call
+               class="text-gray bg-green-500 hover:bg-green-300 focus:underline focus:ring-4 focus:outline-none transition-all focus:ring-green-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-400 dark:text-white">Call
               To Order</a>
           </router-link>
         </div>
