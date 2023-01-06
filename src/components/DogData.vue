@@ -1,5 +1,5 @@
 <template>
-  <div id="DogContainer">
+  <div id="DogContainer" class="w-120 h-auto">
     <div v-if="errored">
       <p>
         We are sorry, we are not able to receive this information at the moment please try again later. </p>

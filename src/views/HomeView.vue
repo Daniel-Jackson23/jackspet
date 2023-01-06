@@ -7,6 +7,7 @@ import PetHealth from "@/components/PetHealth.vue";
 import ProductTitle from "../components/ProductTitle.vue";
 import Subscribe from "@/components/Subscribe.vue";
 import HealthTipsTitle from "@/components/HealthTipsTitle.vue";
+import Footer from "@/components/Footer.vue";
 
 
 export default {
@@ -17,6 +18,7 @@ export default {
     }
   },
   components: {
+    Footer,
     HealthTipsTitle,
     Subscribe,
     ProductTitle,
@@ -52,6 +54,6 @@ export default {
     <!--    subscribe-->
     <Subscribe/>
   </main>
-
+  <Footer/>
 
 </template>

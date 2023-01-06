@@ -1,7 +1,11 @@
 <template>
   <div id="LoginComponent">
-    <div v v-if="!authenticated" class="flex items-center justify-center min-h-screen">
-      <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
+    <a href="#" class=" flex justify-center mb-6 text-2xl font-semibold text-gray-900 dark:bg-dark-text-white">
+      <img class="w-8 h-8 mr-2" src="../assets/Logo.svg" alt="logo">
+      Jacks pets Login page
+    </a>
+    <div v v-if="!authenticated" class="flex items-center justify-center ">
+      <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg rounded">
         <h3 class="text-center font-bold py-2">Login into your account</h3>
         <p class="m-2">
           <input type="email" v-model="email"
@@ -16,15 +20,15 @@
           <label for="myPassword" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
         </p>
         <button @click="logIn"
-                class="mt-2 px-3 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-button-primary text-white">
+                class="mt-2 px-3 h-12 uppercase font-semibold tracking-wider border-2 border-green bg-green-400 text-gray hover:underline transition-all">
           Login
         </button>
         <p v-if="errMsg">{{ errMsg }}</p>
       </div>
     </div>
-    <div v-if="authenticated">
+    <div v-if="authenticated" class="flex justify-center">
       <button @click="logOut"
-              class="myLogout mt-3 px-6 h-12 uppercase font-semibold tracking-wide border-2 border-black bg-button-primary text-black">
+              class="myLogout mt-3 px-6 h-12 uppercase font-semibold rounded tracking-wide border-2 border-green bg-green-400 text-gray hover:underline transition-all">
         Logout
       </button>
     </div>

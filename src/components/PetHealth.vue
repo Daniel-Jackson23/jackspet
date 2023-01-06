@@ -5,7 +5,7 @@
           mx-auto
           md:flex md:justify-between">
     <div
-        class="max-w-sm bg-green-100 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt=""/>
       </a>

@@ -41,7 +41,7 @@
                 password?</a>
             </div>
             <button @click="register"
-                    class="w-full bg-button-primary text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:accent-dark-button-primary dark:accent-dark-primary-bg ">
+                    class="w-full bg-green-500 text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:accent-dark-button-primary dark:accent-dark-primary-bg ">
               Register
             </button>
             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
@@ -54,12 +54,14 @@
       </div>
     </div>
   </section>
+  <Footer />
 </template>
 
 <script setup>
 import {ref} from "vue";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"
 import {useRouter, RouterLink} from "vue-router";
+import Footer from "@/components/Footer.vue";
 
 
 let email = ref("")

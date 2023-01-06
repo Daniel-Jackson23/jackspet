@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <div v-if="!userLoggedIn">
-      <button>Subscribe</button>
-    </div>
+  <div class=" flex justify-center py-4">
     <div v-if="userLoggedIn">
-      <!--      add link for voucher-->
-      <p>You are not logged in</p>
+      <button>Subscribe</button>
+      <img src="../assets/images/voucher.jpg" alt="Voucher"/>
+      <p class="font-bold">Please collect your Voucher! </p>
+    </div>
+    <div v-if="!userLoggedIn">
+      <!--      <p>You are not logged in</p>-->
     </div>
   </div>
 </template>
@@ -20,15 +21,17 @@ export default {
       userLoggedIn: false
     }
   },
+  beforeMount() {
+    this.NewUser();
+  },
   methods: {
     NewUser() {
       const auth = getAuth();
       onAuthStateChanged(auth, (user) => {
         if (user) {
-          this.user = true
+          this.userLoggedIn = true
         } else {
-          this.user = false
-
+          this.userLoggedIn = false
         }
       });
     }

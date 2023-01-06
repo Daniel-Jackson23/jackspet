@@ -37,12 +37,11 @@
 </template>
 
 <script>
-import LoginBox from "@/components/LoginBox.vue";
 import {RouterLink} from "vue-router";
 
 export default {
   name: "Navigation",
-  components: {LoginBox},
+  components: {},
   data() {
     return {
       showMenu: false,
