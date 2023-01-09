@@ -4,14 +4,16 @@
           px-5
           py-3
           mx-auto flex flex-row sm:max-lg:flex-col">
-      <div class="relative w-50">
+      <div class="relative w-45">
         <TextContainer class="pb-5">
           <h2 class="text-dark-blue text-l pb-2 font-bold text-primary-text">Welcome to Jack Pet Supply</h2>
-          <p class="">We are currently offering a limited discount of 10% on all Dog food if you subscribe to our
-            website, Don't
-            wait to long!!! </p><br>
-          <p>Please look at our current products that we have on offer, we are also partnered with a local dog rescue we
-            are donating 10% of orders to Sherlock Rescue.</p>
+          <p>Hello and welcome to Jacks Pet Supplies we are a local pet shop based in the Stoke on trent area. We are
+            also in partnership with Sherlock Dog Rescue.</p><br>
+          <p class="">We are currently offering a limited discount of 10% on all products if you subscribe to our
+            website.</p><br>
+
+          <p class="font-bold">Please look at our current products that we have on offer to claim your 10% discount when
+            your subscribe.</p>
         </TextContainer>
         <div class="flex">
           <router-link to="/sherlock" custom v-slot="{navigate}">
@@ -35,7 +37,8 @@
         </div>
       </div>
       <div class="w-300 h-218">
-        <img src="../assets/images/petshop.png" alt="pet shop" class="bannerImage rounded" width="612" height="408">
+        <img src="../assets/images/petshop.png" alt="pet shop" class="bannerImage rounded pl-0.5 " width="612"
+             height="408">
       </div>
     </div>
   </section>

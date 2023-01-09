@@ -6,12 +6,13 @@
           md:flex md:justify-between">
     <div class="w-full max-w-sm bg-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
       <a href="#">
-        <img class="p-8 rounded-t-lg" :src=image alt="product image" width="400" height="200"/>
+        <img class="p-8 rounded-t-lg" loading="lazy" :src=image alt="product image" width="400" height="200"/>
       </a>
       <div class="px-5 pb-5">
         <a href="#">
           <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ Name }}</h5>
         </a>
+        <p class="text-sm">With the purchase of this project we will donate 10% of the profit made to Sherlock Dog Rescue</p>
         <div class="flex items-center mt-2.5 mb-5">
           <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
                xmlns="http://www.w3.org/2000/svg"><title>First star</title>
@@ -43,11 +44,13 @@
         </div>
         <div class="flex items-center justify-between">
           <span class="text-3xl font-bold text-gray-900 dark:text-white">{{ price }}</span>
+
           <router-link to="/login">
             <a href="#"
                class="text-gray bg-green-500 hover:bg-green-300 focus:underline focus:ring-4 focus:outline-none transition-all focus:ring-green-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-400 dark:text-white">Call
               To Order</a>
           </router-link>
+
         </div>
       </div>
     </div>

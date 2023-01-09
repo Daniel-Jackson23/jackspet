@@ -1,5 +1,5 @@
 <template>
-  <h2 class="product-title">
+  <h2 class="product-title underline font-bold">
     <slot />
   </h2>
 </template>

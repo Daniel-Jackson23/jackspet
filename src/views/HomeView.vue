@@ -44,6 +44,7 @@ export default {
     <div class="grid grid-rows-2 grid-flow-col flex sm:max-lg:flex flex-col justify-center">
       <ProductCard v-for="product in products" :Name="product.Name" :image="product.image" :price="product.price"/>
     </div>
+    <Subscribe/>
     <HealthTipsTitle class="bg-gray-700">
       <h2 class="text-center text-white font-bold text-xl py-2 underline">Our pet health tips for 2022</h2>
     </HealthTipsTitle>
@@ -51,8 +52,6 @@ export default {
       <PetHealth v-for="Healthtip in Healthtips" :title="Healthtip.title" :image="Healthtip.image"
                  :description="Healthtip.description" :animal="Healthtip.animal"/>
     </div>
-    <!--    subscribe-->
-    <Subscribe/>
   </main>
   <Footer/>
 

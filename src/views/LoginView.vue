@@ -5,7 +5,7 @@
       Jacks pets Login page
     </a>
     <div v v-if="!authenticated" class="flex items-center justify-center ">
-      <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg rounded">
+      <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg rounded-lg">
         <h3 class="text-center font-bold py-2">Login into your account</h3>
         <p class="m-2">
           <input type="email" v-model="email"
@@ -33,7 +33,6 @@
       </button>
     </div>
   </div>
-
 </template>
 
 <script setup>
@@ -41,7 +40,6 @@
 import {ref, onMounted, computed} from "vue";
 import {getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {useRoute} from "vue-router";
-import {data} from "autoprefixer";
 
 let loggedIn = ref(false);
 let email = ref();
@@ -98,15 +96,7 @@ function logOut() {
     router.push("/");
   })
 }
-
-//
-// export default {
-//   name: "LoginBox"
-// }
-
-
 </script>
-
 <style scoped>
 
 </style>
